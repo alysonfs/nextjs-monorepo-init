@@ -20,7 +20,9 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "turbo run dev --parallel"
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "turbo run format"  
   },
   "engines": {
     "node": ">=16.0.0"
