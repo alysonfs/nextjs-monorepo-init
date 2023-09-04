@@ -1,0 +1,32 @@
+{
+  "name": "mono-nextjs-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Alyson Souza",
+    "email": "alysonforever@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alysonfs/nextjs-monorepo-init.git"
+  },
+  "workspaces": [
+    "common/domain",
+    "common/config",
+    "common/utils",
+    "common/ui",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "turbo": "^1.10.13"
+  }
+}
